@@ -1,0 +1,27 @@
+#cartComponent {
+  width: 10px !important;
+  padding: 0 !important;
+}
+
+.cartImage {
+  margin-left: 5%;
+  border-radius: 10px;
+}
+
+.cartInput {
+  width: 40%;
+  padding: 4px;
+}
+.cartInput1 {
+  padding: 4px !important;
+  margin: 0;
+}
+
+.cartSpan {
+  margin-top: 10px;
+  display: flex;
+}
+
+.btnStyle {
+  margin: 0 auto !important;
+}
