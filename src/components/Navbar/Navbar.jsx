@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar active">
+      <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             SAYAKAT
@@ -72,6 +72,15 @@ const Navbar = () => {
             </li>
 
             <li>
+              <div className="cart">
+                <Link
+                  to="/card"
+                  className="navbar-logo"
+                  onClick={closeMobileMenu}
+                >
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </Link>
+              </div>
               <Link
                 to="/sign-up"
                 className="nav-links-mobile"
