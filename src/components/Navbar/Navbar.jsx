@@ -76,7 +76,7 @@ const Navbar = () => {
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Products
+                Tours
               </Link>
             </li>
 

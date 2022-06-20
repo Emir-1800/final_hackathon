@@ -12,11 +12,9 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-// import { useAuth } from "../context/AuthContext
+import { useAuth } from "../context/AuthContext";
 import { Modal } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { authContext } from "../context/AuthContext";
-import { useContext } from "react";
 
 function Copyright(props) {
   return (
@@ -50,8 +48,7 @@ export default function Register() {
 
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
-  const { register, error, activationCode, forgotPassCode } =
-    useContext(authContext);
+  const { register, error, activationCode, forgotPassCode } = useAuth();
 
   const [activeCode, setActiveCode] = React.useState("");
 
@@ -102,7 +99,7 @@ export default function Register() {
             alignItems: "center",
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "success.main" }}>
+          <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">

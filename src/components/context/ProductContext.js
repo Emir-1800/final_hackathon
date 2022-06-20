@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 
 export const productContext = createContext();
 
-const API = "http://localhost:8000/tours.api";
+const API = "http://localhost:8000/tours";
 
 const INIT_STATE = {
   products: [],
