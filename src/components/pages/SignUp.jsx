@@ -1,6 +1,6 @@
 import React from "react";
 import "../../App.css";
-import Login from "../authorization/Login";
+import Login from "../Auth/Login";
 
 const LoginPage = () => {
   return (
