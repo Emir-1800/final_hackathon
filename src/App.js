@@ -2,20 +2,21 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import Footer from "../src/components/Footer/Footer";
 import MainRoutes from "../src/MainRoutes";
-import AuthContextProvider from "./components/context/AuthContextProvider";
-import CrudContextProvider from "./components/context/CrudContextProvider";
-import CardContextProvider from "./components/context/CardContextProvider";
+import PrimarySearchAppBar from "./components/Navbar/Navbar";
+import AuthContextProvider from "./components/context/AuthContext";
+import CartContextProvider from "./components/context/CartContext";
+import ProductContextProvider from "./components/context/ProductContext";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <CardContextProvider>
-        <CrudContextProvider>
-          <AuthContextProvider>
+      <AuthContextProvider>
+        <CartContextProvider>
+          <ProductContextProvider>
             <MainRoutes />
-          </AuthContextProvider>
-        </CrudContextProvider>
-      </CardContextProvider>
+          </ProductContextProvider>
+        </CartContextProvider>
+      </AuthContextProvider>
     </BrowserRouter>
   );
 };
