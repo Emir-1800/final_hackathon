@@ -7,6 +7,7 @@ import AuthContextProvider from "./components/context/AuthContext";
 import CartContextProvider from "./components/context/CartContext";
 import ProductContextProvider from "./components/context/ProductContext";
 
+
 const App = () => {
   return (
     <BrowserRouter>
