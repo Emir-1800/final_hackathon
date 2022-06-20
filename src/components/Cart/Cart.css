@@ -1,0 +1,18 @@
+.cart td {
+  padding: 10px 50px;
+  border-bottom: 1px solid gray;
+}
+.cart img {
+  width: 50px;
+}
+
+.but {
+  font-size: 25px;
+  width: 20px;
+  height: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  justify-content: center;
+  align-items: center;
+}
