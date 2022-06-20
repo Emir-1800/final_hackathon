@@ -9,6 +9,7 @@ import SignUp from "../src/components/pages/SignUp";
 import Register from "./components/Auth/Register";
 import AddProduct from "./components/Admin/AddProduct/AddProduct";
 import EditProduct from "./components/Admin/EditProduct/EditProduct";
+import ProductDetails from "./components/pages/ProductsDetails";
 
 const MainRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const MainRoutes = () => {
         <Route path="/" exact element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/addatour" element={<AddProduct />} />
+        <Route path="/details/:id" element={<ProductDetails />} />
         <Route path="edit/:id" element={<EditProduct />} />
         <Route path="/products" element={<Products />} />
         <Route path="/sign-up" element={<SignUp />} />

@@ -5,6 +5,7 @@ import React, { useContext, useState } from "react";
 import { productContext } from "../../context/ProductContext";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { NavLink } from "react-router-dom";
 
 const initObj = {
   title: "",
@@ -145,14 +146,16 @@ const AddProduct = () => {
           />
         </div>
         <div>
-          <Button
-            onClick={handleSave}
-            type="button"
-            variant="contained"
-            className="btnSave"
-          >
-            Save
-          </Button>
+          <NavLink to="/products">
+            <Button
+              onClick={handleSave}
+              type="button"
+              variant="contained"
+              className="btnSave"
+            >
+              Save
+            </Button>
+          </NavLink>
           <ToastContainer
             position="top-center"
             autoClose={5000}

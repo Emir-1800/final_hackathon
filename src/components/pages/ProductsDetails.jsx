@@ -1,7 +1,8 @@
+// import React from "react";
 import React, { useContext, useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { productContext } from "../context/CrudContextProvider";
+import { productContext } from "../../components/context/ProductContext";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
@@ -19,7 +20,7 @@ import SwiperCore, { Thumbs } from "swiper";
 
 SwiperCore.use([Thumbs]);
 
-const ProductDetails = () => {
+const ProductsDetails = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   let { id } = useParams();
   const { getProductsDetails, productDetails } = useContext(productContext);
@@ -185,4 +186,4 @@ const ProductDetails = () => {
   );
 };
 
-export default ProductDetails;
+export default ProductsDetails;
