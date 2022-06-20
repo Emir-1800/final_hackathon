@@ -10,6 +10,7 @@ import Register from "./components/Auth/Register";
 import AddProduct from "./components/Admin/AddProduct/AddProduct";
 import EditProduct from "./components/Admin/EditProduct/EditProduct";
 import ProductDetails from "./components/pages/ProductsDetails";
+import Cart from "./components/Cart/Cart";
 
 const MainRoutes = () => {
   return (
@@ -24,6 +25,7 @@ const MainRoutes = () => {
         <Route path="/products" element={<Products />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </>
   );
