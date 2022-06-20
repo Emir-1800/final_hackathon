@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import RestoreFromTrashIcon from "@mui/icons-material/RestoreFromTrash";
 import { NavLink, useSearchParams } from "react-router-dom";
-// import Filter from "../Filter/Filter";
+import Filter from "../Filter/Filter";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import cartContext from "../context/CartContext";
 import "./ProductsList.css";
@@ -73,9 +73,9 @@ const Products = () => {
 
   return (
     <div className="main_container">
-      {/* <div className="filter">
+      <div className="filter">
         <Filter type={type} setType={setType} />
-      </div> */}
+      </div>
       <div className="container">
         {products
           ? products.slice(productVisited, sliceTwoIndex).map((item) => (
