@@ -83,7 +83,7 @@ const Navbar = () => {
             <li>
               <div className="cart">
                 <Link
-                  to="/card"
+                  to="/cart"
                   className="navbar-logo"
                   onClick={closeMobileMenu}
                 >

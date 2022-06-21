@@ -1,11 +1,13 @@
 import React, { useContext, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import CartContextProvider, { cartContext } from "../context/CartContext";
+import CartContextProvider, {
+  cartContext,
+  useCart,
+} from "../context/CartContext";
 import "./Cart.css";
 
 const Cart = () => {
-  const { cart, getCart, deleteCartProduct, changeProductCount } =
-    useContext(CartContextProvider);
+  const { cart, getCart, deleteCartProduct, changeProductCount } = useCart();
 
   useEffect(() => {
     getCart();
