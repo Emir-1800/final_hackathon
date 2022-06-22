@@ -46,7 +46,10 @@ const Cart = () => {
                   </td>
                   <td>{elem.subPrice}</td>
                   <td>
-                    <button onClick={() => deleteCartProduct(elem.item.id)}>
+                    <button
+                      className="delete"
+                      onClick={() => deleteCartProduct(elem.item.id)}
+                    >
                       Удалить
                     </button>
                   </td>
