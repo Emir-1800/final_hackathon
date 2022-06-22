@@ -29,7 +29,7 @@ const EditProduct = () => {
   const handleSave = (e) => {
     e.preventDefault();
     editProduct(id, inpValues);
-    navigate("/list");
+    navigate("/products");
   };
 
   return (
@@ -93,7 +93,12 @@ const EditProduct = () => {
         />
       </div>
       <NavLink to="/products">
-        <Button className="edit_button" type="submit" variant="contained">
+        <Button
+          onClick={handleSave}
+          className="edit_button"
+          type="submit"
+          variant="contained"
+        >
           Save
         </Button>
       </NavLink>

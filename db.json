@@ -1,7 +1,6 @@
 {
   "tours": [
     {
-
       "title": "Ala Archa",
       "type": "Mountains",
       "description": "Duration: 4-5 hours. Location: 40 km south of Bishkek, 40-50 min. Height: 1600-4860 m. Hiking, walking to the waterfall (depending on weather conditions, may take a whole day) Season: all year round Note: it is recommended to have hiking shoes and warm clothes   Ala-Archa natural park is 40 km away from Bishkek. It is a popular place for outdoor picnics, lovers of walking and horseback riding, and also for mountaineers and skiers. There are more than 20 glaciers, two small rivers that come from their melting and 50 mountain peaks in the park. Ala-Archa features both flora, including Tien Shan firs, Semenov firs, Kolpakovsky and Kaufman tulips and rare edelweiss alpine flowers; and fauna: eagles, ibex, Marco Polo sheep and rare, but well known, snow leopards. Here you will enjoy the smell of real juniper.",
@@ -30,7 +29,86 @@
       "img2": "https://travelbar.kg/template/images/listings/479/3.jpg",
       "img3": "https://www.open.kg/uploads/posts/2018-08/1535631093_screenshot_9.png",
       "id": 3
-
+    },
+    {
+      "title": "Tien Shan Mountains",
+      "type": "Mountains",
+      "description": "The Tian Shan Mountains are located in the territories of five countries, and this mountain system is clearly visible even from the Earth's orbit. The Tien Shan Mountains extend for 2.5 thousand kilometers, and any climber would want to climb the Peak Pobeda, which is included in the list of seven-thousanders. People who are sincerely in love with mountains and those who have never seen really high peaks come here. The views opening from a bird's-eye view remain in memory forever, so this attraction of Kyrgyzstan will never cease to be of interest to tourists.",
+      "price": "150",
+      "img1": "https://ethnomir.ru/upload/medialibrary/dfd/tyan.jpg",
+      "img2": "https://shansbooks.ru/upload/iblock/3e0/3e0de516d9756a3ac45b5338b5b0409d.jpg",
+      "img3": "https://i.ytimg.com/vi/GBaOq7bb240/maxresdefault.jpg",
+      "id": 4
+    },
+    {
+      "title": "Sacred Mountain Sulaiman-Too",
+      "type": "Mountains",
+      "description": "Often tours in Kyrgyzstan include the sacred mountain Sulaiman-Too in their itinerary. This limestone mountain massif is about 1,140 meters long and was included in 2009 as the first among the rest of the monuments under the protection of UNESCO. Tourists are invited not only to make the ascent, but also to visit the museum and admire with their own eyes the structures preserved from past eras. If you are not afraid of confined spaces, it is worth taking a closer look at one or more of the caves.",
+      "price": "100",
+      "img1": "https://avatars.mds.yandex.net/get-zen_doc/3938527/pub_60a68336ce8b300078e366c1_60a6833852636e385a652de0/scale_1200",
+      "img2": "https://i0.photo.2gis.com/images/geo/0/30258560068868188_da85.jpg",
+      "img3": "https://sputnik.kg/img/07e6/04/05/1063408319_2:0:3643:2048_1920x0_80_0_0_a14a5f805e0da4b837ffd281c5389e89.jpg",
+      "id": 5
+    },
+    {
+      "title": "Arslanbob",
+      "type": "Mountains",
+      "description": "Arslanbob: village, resort, tract, waterfalls, walnut forest is a favorite holiday settlement among those who love hiking. During the walk you can see the walnut trees, which are hundreds of years old and feel complete unity with nature. If trekking isn't for you, book an off-road vehicle tour to see the incredible Kyrgyz countryside.",
+      "price": "120",
+      "img1": "https://img.itinari.com/pages/images/original/9ab71b7d-fe52-4861-b684-ca3a6e93a4b9-istock-657138860-3.jpg?ch=DPR&dpr=2.625&w=1600&s=ba0e90fe7c3eeac4987da56228aa1c97",
+      "img2": "https://centralasia-adventures.com/image/new/arslanbob.html-n.jpg",
+      "img3": "https://www.baibol.kg/img/attraction_gallery/15241363234794.jpg",
+      "id": 6
+    },
+    {
+      "title": "Sary-Chelek Lake",
+      "type": "Lake",
+      "description": "The high-mountain lake Sary-Chelek stretches along the cliffs for 7.5 km. Its basin is filled by melted snow. The shores are covered with dense coniferous forests, where hares, wolves, wild boars and roe deer live. The lake is part of the Sary-Chelek reserve. The national park itself is famous for snow-capped mountain ranges and violent rivers with rushing waterfalls.  On the southern side of Sary-Chelek there is a sacred place - the tomb of the Muslim saint Toskool Ata. Nearby is a mosque and a spring of healing water.",
+      "price": "99",
+      "img1": "https://leisureandtravel.ru/wp-content/uploads/2021/06/2695d7bbbbc261e56e0da-scaled.jpg",
+      "img2": "https://concept.kg/media/cache/3b/1c/3b1c199419217bbce8f50f065db361b1.jpg",
+      "img3": "https://vyboroved.ru/images/travel/kirgisia/osero-sari-chelek.jpg ",
+      "id": 7
+    },
+    {
+      "title": "South and North Inylchek Glaciers",
+      "type": "Mountains",
+      "description": "Kyrgyzstan is a country of mountains with many glaciers and eternal snows. South Inylchek is the largest glacier in the Tien Shan, running at an altitude of 7,440 meters. Its length is 58 km, and its area is 567.2 sq km. The thickness of the ice reaches 200 meters. This place is reminiscent of the realm of the Snow Queen and attracts experienced climbers. When climbing, the danger is heavy snowfalls, wind, and frequent changes in the weather.  Next to Yuzhny is the North Inylchek glacier. Mertsbaher Lake was formed between them, filled with meltwater and ice that broke away from the glacier. The lake has two pools and two levels. Twice a year, the lower basin bursts, and water rapidly flows into the Inylchek River, sweeping away everything in its path.",
+      "price": "140",
+      "img1": "https://economist.kg/wp-content/uploads/2021/11/kyrgyzstan-nature-glaciers.jpeg",
+      "img2": "https://centralasia-adventures.com/image/new/inylchek_glacier.html-n.jpg",
+      "img3": "https://triptokyrgyzstan.com/sites/default/files/media/image/c_nikolai_k.jpg",
+      "id": 8
+    },
+    {
+      "title": "Manas Ordo",
+      "type": "Mountains",
+      "description": "Manas Ordo is a memorial complex in honor of the national hero Manas, who defended and united the Kyrgyz in the epic of the same name. It was erected in the Karakhanid era, around 1334. The memorial complex in northwest Kyrgyzstan has a mausoleum where the remains of the hero are kept. The location of the complex is not accidental: according to the legend, the main headquarters of Manas and his army was located in the Talas Valley.The building complex is situated 12 kilometers east of Talas, in the northwest part of Central Asia's Kyrgyzstan. South of Manas Ordo is the Talas River, beyond which the high Kyrgyz mountains begin. The epos Manas tells about the Kyrgyz batyr Manas, who returned the Kyrgyz from the Altai to the Tien Shan, and later defended them from Chinese raids. The epos is historical and therefore a significant part of the events described in it actually took place. The epic is rightly considered a kind of encyclopedia of life of the Kyrgyz people, evidence of its ancient history. To preserve the memory of the Kyrgyz national hero a complex was created. The tomb of Manas, or kumbez of Manas, is the most important sight of this complex. In fact, there is no confirmation that the gumbaz is the tomb of Manas. The kumbaz was built five centuries before the epic. There are suggestions that the daughter of the Karakhadi Khan rests there. The mausoleum has an interesting architecture: the walls are covered with a carved mosaic of clay, the dome is a rugged cone.",
+      "price": "88",
+      "img1": "http://www.photo.kg/uploads/posts/2016-07/1469074965_img_4061.jpg",
+      "img2": "https://sputnik.kg/img/104577/80/1045778097_2:0:3643:2048_1920x0_80_0_0_72eefdc4c34e9676b905adbade0aef1c.jpg",
+      "img3": "https://st-1.akipress.org/st_gallery/16/991716.b15ce0d1d1806baa53882604a255b3f4.jpg",
+      "id": 9
+    },
+    {
+      "title": "Bishkek City",
+      "type": "City Tour",
+      "description": "Bishkek (Bishkek; formerly Pishpek, Frunze) is the capital of Kyrgyzstan, the city of national importance, and the administrative center of Chui Oblast. The largest city of Kyrgyzstan in terms of population - 1,088,900 people (as of 1 January, 2021), the main transport hub, industrial and administrative center of the country. It is the modern cultural, political, and economic center of the republic.It was founded in 1878 as a village on the site of the former Kokand fortress of Pishpek, which in 1926 was renamed Frunze in memory of the Soviet party and military leader Mikhail Frunze. Because the Kyrgyz language lacks the \"f\" sound and consonants cannot be conflated at the beginning of a word, the name was pronounced \"Purunze\" by the locals. After the collapse of the Soviet Union and Kyrgyzstan's independence, the question of renaming the capital city arose. It turned out that the etymology of the original name \"Pishpek\" is unknown; the closest to this name was the Kyrgyz word \"bishkek\" - \"whisker to shake koumiss\". It is unknown how this economic affiliation could be connected with the name of the fortress, but in 1991 Bishkek was adopted as the new name of the capital[5]. The official website of the Bishkek City Hall gives the following etymological rationale for the name of the city: the pregnant wife of a batyr (bogatyr) lost a mutovka (Kyrgyz bishkek) for whipping koumiss. While looking for her \"bishkek\" she suddenly went into labor, and gave birth to a boy, who was named Bishkek. Subsequently, he became a batyr and after his death was buried on a hillock near the bank of the Alamedin River. The tomb gumbez, Bishkek, was erected there. This very structure was seen and described by travelers of the XVII-XVIII centuries",
+      "price": "77",
+      "img1": "https://i.pinimg.com/736x/92/f8/6b/92f86b09a860571f96a24382c39bc059.jpg",
+      "img2": "https://www.ktrk.kg/img/thumbnail/662511639396075_big.jpg",
+      "img3": "https://kyrtag.kg/upload/iblock/51d/51d1c9fe157a2252c79a7aee89ed1581.jpg",
+      "id": 10
+    },
+    {
+      "title": "Osh City",
+      "type": "City Tour",
+      "description": "Osh, the southern capital of Kyrgyzstan, is the second largest city in the coyntry. The city of Osh is the second largest city of Kyrgyzstan after Bishkek, with a population of about 250,000, officially called the \"Southern Capital.\" It was one of the religious Muslim centers of Central Asia. It is best known for its ancient mosques in the city center and the Sulaiman-Too mountain (Sulaiman-Takhty, Solomon's Throne), which is one of the places of pilgrimage of Central Asian Muslims. The city is located in a foothill oasis, which has long been inhabited by people long before the Kyrgyz came there from the Yenisei (about 800 years ago). In the 1950s, archaeologist Yuri Alexandrovich Zadneprovsky on the southern slope of Sulaiman-Too found the remains of an ancient settlement of farmers of the Bronze Age, which proved that the history of Osh has three millennia, but in historical scholarship is customary to count the age of cities from the earliest mention in historical records, the earliest mention of the city in the chronicles refers to the IX century AD, which still allows us to consider it the oldest city in the country. In the 10th century Osh was considered the third largest city in Fergana, being a crossroads of caravan routes from India and China to Europe.",
+      "price": "60",
+      "img1": "https://asiamountains.net/assets/cache_image/assets/lib/resized/424/1600x1063_0x0_d0b.jpg",
+      "img2": "https://too.kg/wp-content/uploads/IMG_20180222_104919_354.jpg",
+      "img3": "https://www.open.kg/uploads/posts/2021-09/1632499220_screenshot_41.png",
+      "id": 11
     }
   ]
 }
