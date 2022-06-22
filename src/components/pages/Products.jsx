@@ -29,6 +29,7 @@ const Products = () => {
 
   const paramsWithType = () => {
     // console.log("params With Type");
+    console.log(searchParams.get("q"));
     return {
       type: type,
       q: searchParams.get("q"),
@@ -36,7 +37,7 @@ const Products = () => {
   };
 
   const paramsNoType = () => {
-    // console.log("params No Type");
+    console.log(searchParams);
     return {
       q: searchParams.get("q") || "",
     };

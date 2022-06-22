@@ -3,13 +3,14 @@ import { Button } from "../Button/Button";
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import "./Navbar.css";
+import LiveSearch from "./LiveSearch";
 
-const filterSearch = (searchText, listOfSearch) => {
-  if (!searchText) {
-    return listOfSearch;
-  }
-  return listOfSearch.filter(({ search }) => search.toLowerCase().includes());
-};
+// const filterSearch = (searchText, listOfSearch) => {
+//   if (!searchText) {
+//     return listOfSearch;
+//   }
+//   return listOfSearch.filter(({ search }) => search.toLowerCase().includes());
+// };
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -55,7 +56,7 @@ const Navbar = () => {
           </Link>
           <div className="search">Search</div>
           <div>
-            <input id="inpSer" />
+            <LiveSearch />
           </div>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
