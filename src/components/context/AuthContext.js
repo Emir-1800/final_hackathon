@@ -1,10 +1,91 @@
 import axios from "axios";
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { Route, useNavigate } from "react-router-dom";
-import { API2 } from "../helpers/Consts";
-export const authContext = createContext();
+import { API } from "../helpers/Consts";
+export const authContex = createContext();
+
+export const authContext = React.createContext();
+
+// let API = "http://54.245.142.239/";
+
+// const INIT_STATE = {
+//   is_auth: false,
+// };
+
+// const reducer = (state = INIT_STATE, action) => {
+//   switch (action.type) {
+//     case "CHECK_AUTH":
+//       return { ...state, is_auth: action.payload };
+//     default:
+//       return state;
+//   }
+// };
+
+// const AuthContextProvider = ({ children }) => {
+//   const [state, dispatch] = useReducer(reducer, INIT_STATE);
+
+//   let flag = true;
+
+//   const checkToken = async () => {
+//     let access = localStorage.getItem("access");
+//     if (!access) {
+//       dispatch({
+//         type: "CHECK_AUTH",
+//         payload: false,
+//       });
+//     }
+//     const config = {
+//       headers: {
+//         Authorization: Bearer $ {access},
+//       },
+//     };
+//     try {
+//       await axios.get(${API}/check-token/, config);
+//       dispatch({
+//         type: "CHECK_AUTH",
+//         payload: true,
+//       });
+//     } catch (error) {
+//       if (flag) {
+//         refreshToken();
+//         flag = false;
+//         checkToken();
+//       } else {
+//         dispatch({
+//           type: "CHECK_AUTH",
+//           payload: false,
+//         });
+//       }
+//     }
+
+//   };
+
+//   const refreshToken = async () => {
+//     const config = {
+//       headers: { "Content-Type": "multipart/form-data" },
+//     };
+//     let refresh = localStorage.getItem("refresh");
+//     const res = await axios.post(${API}/token/refresh/, { refresh }, config);
+//     const { access } = res.data;
+//     localStorage.setItem("access", access);
+//   };
+
+//   return (
+//     <authContext.Provider
+//       value={{
+//         is_auth: state.is_auth,
+//         checkToken,
+//       }}
+//     >
+//       {children}
+//     </authContext.Provider>
+//   );
+// };
+
+// export default AuthContextProvider;
 
 // const API = 'http://35.239.251.89/';
+// const API = "http://54.245.142.239/";
 
 export const useAuth = () => {
   return useContext(authContext);
@@ -24,11 +105,7 @@ const AuthContextProvider = ({ children }) => {
     formData.append("password", user.password);
 
     try {
-      const res = await axios.post(
-        `${API2}account/register/`,
-        formData,
-        config
-      );
+      const res = await axios.post(`${API}account/register/`, formData, config);
     } catch (e) {
       console.log(e);
       setError("error occured");
@@ -44,7 +121,7 @@ const AuthContextProvider = ({ children }) => {
     formData.append("activation_code", value);
 
     try {
-      await axios.post(`${API2}account/activation/`, formData, config);
+      await axios.post(`${API}account/activation/`, formData, config);
       navigate("/login");
     } catch (error) {}
   }
@@ -57,7 +134,7 @@ const AuthContextProvider = ({ children }) => {
     console.log(value);
     navigate("/recovery");
     try {
-      await axios.post(`${API2}account/password_reset/`, formData, config);
+      await axios.post(`${API}account/password_reset/`, formData, config);
     } catch (error) {}
   }
 
@@ -74,7 +151,7 @@ const AuthContextProvider = ({ children }) => {
 
     try {
       await axios.post(
-        `${API2}account/password_reset/confirm/`,
+        `${API}account/password_reset/confirm/`,
         formData,
         config
       );
@@ -102,7 +179,7 @@ const AuthContextProvider = ({ children }) => {
     formData.append("password", password);
 
     try {
-      let res = await axios.post(`${API2}account/login/`, formData, config);
+      let res = await axios.post(`${API}account/login/`, formData, config);
       console.log(res);
       localStorage.setItem("token", JSON.stringify(res.data));
       localStorage.setItem("username", username);
@@ -122,7 +199,7 @@ const AuthContextProvider = ({ children }) => {
       const Authorization = `Bearer ${token.access}`;
 
       let res = await axios.post(
-        `${API2}account/refresh/`,
+        `${API}account/refresh/`,
         {
           refresh: token.refresh,
         },
@@ -157,7 +234,7 @@ const AuthContextProvider = ({ children }) => {
 
     let form = new FormData();
     form.append("refresh", token.refresh);
-    await axios.post(`${API2}account/logout/`, form, config);
+    await axios.post(`${API}account/logout/`, form, config);
     localStorage.removeItem("token");
     localStorage.removeItem("username");
     setUserName("");
