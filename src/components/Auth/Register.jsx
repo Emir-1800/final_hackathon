@@ -19,7 +19,6 @@ import { pink } from "@mui/material/colors";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { userAdmin } from "../helpers/Consts";
-// import "./Registration.css";
 
 function Copyright(props) {
   return (
