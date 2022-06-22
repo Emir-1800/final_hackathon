@@ -11,7 +11,7 @@ const initObj = {
   title: "",
   type: "",
   description: "",
-  price: 0,
+  price: "",
   img1: "",
   img2: "",
   img3: "",

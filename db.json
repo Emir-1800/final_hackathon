@@ -1,6 +1,7 @@
 {
   "tours": [
     {
+
       "title": "1",
       "type": "Mountains",
       "description": "1",
@@ -19,6 +20,7 @@
       "img2": "44",
       "img3": "4",
       "id": 2
+
     }
   ]
 }
