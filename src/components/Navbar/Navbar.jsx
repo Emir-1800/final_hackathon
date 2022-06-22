@@ -55,7 +55,7 @@ const Navbar = () => {
           </Link>
           <div className="search">Search</div>
           <div>
-            <input />
+            <input id="inpSer" />
           </div>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />

@@ -4,13 +4,12 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
-import "./Filter.css";
 
 const Filter = ({ type, setType }) => {
   return (
-    <div className="filter1">
+    <div>
       <FormControl>
-        <FormLabel id="demo-radio-buttons-group-label">Филтрация</FormLabel>
+        <FormLabel id="demo-radio-buttons-group-label">Filter</FormLabel>
         <RadioGroup
           aria-labelledby="demo-radio-buttons-group-label"
           defaultValue="female"
