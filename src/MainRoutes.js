@@ -10,6 +10,8 @@ import Register from "./components/Auth/Register";
 import AddProduct from "./components/Admin/AddProduct/AddProduct";
 import EditProduct from "./components/Admin/EditProduct/EditProduct";
 import ProductDetails from "./components/pages/ProductsDetails";
+import Cart from "./components/Cart/Cart";
+import OrderCard from "./components/OrderCard/OrderCard";
 
 const MainRoutes = () => {
   return (
@@ -19,11 +21,13 @@ const MainRoutes = () => {
         <Route path="/" exact element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/addatour" element={<AddProduct />} />
+        <Route path="/ordercard" element={<OrderCard />} />
         <Route path="/details/:id" element={<ProductDetails />} />
         <Route path="edit/:id" element={<EditProduct />} />
         <Route path="/products" element={<Products />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </>
   );
