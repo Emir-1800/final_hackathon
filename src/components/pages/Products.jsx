@@ -114,7 +114,7 @@ const Products = () => {
                         color="text.secondary"
                         height="25px"
                       >
-                        {item.description}
+                        {item.description.slice(0, 70)}...
                       </Typography>
 
                       <Typography
