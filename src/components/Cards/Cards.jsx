@@ -13,13 +13,13 @@ const Cards = () => {
               src="images/img-9.jpg"
               text="Explore the hidden waterfall deep inside the Amazon Jungle"
               label="Adventure"
-              path="/services"
+              path="/products"
             />
             <CardItem
               src="images/img-2.jpg"
               text="Travel through the Islands of Bali in a Private Cruise"
               label="Luxury"
-              path="/services"
+              path="/products"
             />
           </ul>
           <ul className="cards__items">
@@ -27,7 +27,7 @@ const Cards = () => {
               src="images/img-3.jpg"
               text="Set Sail in the Atlantic Ocean visiting Uncharted Waters"
               label="Mystery"
-              path="/services"
+              path="/products"
             />
             <CardItem
               src="images/img-4.jpg"
@@ -39,7 +39,7 @@ const Cards = () => {
               src="images/img-8.jpg"
               text="Ride through the Sahara Desert on a guided camel tour"
               label="Adrenaline"
-              path="/sign-up"
+              path="/products"
             />
           </ul>
         </div>
