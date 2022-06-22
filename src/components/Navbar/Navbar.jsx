@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "../Button/Button";
 import { Link } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 import "./Navbar.css";
 
 const filterSearch = (searchText, listOfSearch) => {
@@ -13,6 +14,8 @@ const filterSearch = (searchText, listOfSearch) => {
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
+  const { email } = useAuth();
+
   // const [navbar, setNavbar] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -44,7 +47,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar active">
+      <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             SAYAKAT
@@ -58,6 +61,17 @@ const Navbar = () => {
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
+            {email === "admin@gmail.com" ? (
+              <li className="nav-item">
+                <Link
+                  to="/addatour"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  Add a tour
+                </Link>
+              </li>
+            ) : null}
             <li className="nav-item">
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
@@ -78,11 +92,20 @@ const Navbar = () => {
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Products
+                Tours
               </Link>
             </li>
 
             <li>
+              <div className="cart">
+                <Link
+                  to="/cart"
+                  className="navbar-logo"
+                  onClick={closeMobileMenu}
+                >
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </Link>
+              </div>
               <Link
                 to="/sign-up"
                 className="nav-links-mobile"
@@ -92,7 +115,11 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
+          {button && (
+            <Link to="/sign-up" className="btn-mobile">
+              <Button buttonStyle="btn--outline">SIGN UP</Button>
+            </Link>
+          )}
         </div>
       </nav>
     </>
