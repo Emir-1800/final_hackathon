@@ -40,21 +40,21 @@ const ProductsDetails = () => {
             >
               <SwiperSlide>
                 <img
-                  width={400}
+                  width={800}
                   src={productDetails.img1}
                   alt={productDetails.title}
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
-                  width={400}
+                  width={800}
                   src={productDetails.img2}
                   alt={productDetails.title}
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
-                  width={400}
+                  width={800}
                   src={productDetails.img2}
                   alt={productDetails.title}
                 />
