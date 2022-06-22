@@ -7,35 +7,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  background: #0f0c29; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: black;
+  background: none;
+
+  /* background: none; */
 }
 
 .cart td {
   padding: 10px 50px;
   /* border-bottom: 1px solid gray; */
-  background-color: white;
+  background-color: black;
   background: none;
-  color: white;
+  color: black;
 }
 .cart th {
   padding: 10px 50px;
   /* border-bottom: 1px solid gray; */
-  background-color: white;
+  background-color: black;
   background: none;
-  color: white;
+  color: black;
   font-size: 25px;
 }
 .cart img {
@@ -85,7 +75,7 @@ h4 {
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  color: white;
+  color: black;
   border-radius: 20px;
   height: 40px;
 

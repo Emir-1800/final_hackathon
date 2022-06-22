@@ -92,9 +92,11 @@ const EditProduct = () => {
           onChange={(e) => handleChange(e)}
         />
       </div>
-      <Button className="edit_button" type="submit" variant="contained">
-        Edit
-      </Button>
+      <NavLink to="/products">
+        <Button className="edit_button" type="submit" variant="contained">
+          Save
+        </Button>
+      </NavLink>
     </form>
   );
 };

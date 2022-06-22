@@ -130,7 +130,7 @@ const ProductsDetails = () => {
             >
               Скидка : 10 %
             </Alert> */}
-            <Box
+            {/* <Box
               component="div"
               sx={{
                 p: 2,
@@ -139,8 +139,8 @@ const ProductsDetails = () => {
                 alignItems: "center",
                 mt: "20px",
               }}
-            >
-              <Typography
+            > */}
+            {/* <Typography
                 variant="h5"
                 component="div"
                 sx={{
@@ -151,15 +151,15 @@ const ProductsDetails = () => {
                 }}
               >
                 {productDetails.price} с.
-              </Typography>
-              <Typography
-                variant="h4"
-                component="div"
-                sx={{ fontWeight: 700, letterSpacing: 2 }}
-              >
-                {productDetails.price} с.
-              </Typography>
-            </Box>
+              </Typography> */}
+            {/* <Typography */}
+            {/* // variant="h4" */}
+            {/* /   // component="div" */}
+            {/* // sx={{ fontWeight: 700, letterSpacing: 2 }} */}
+            {/* // > */}
+            {/* {productDetails.price} с. */}
+            {/* </Typography> */}
+            {/* </Box> */}
             {/* <Button
               variant="contained"
               color="success"
@@ -170,7 +170,7 @@ const ProductsDetails = () => {
               Добавить в корзину
             </Button> */}
             <NavLink to={`/edit/${productDetails.id}`}>
-              <Button>Edit</Button>
+              <Button className="edit123">Edit</Button>
             </NavLink>
             {/* <Alert
               severity="info"

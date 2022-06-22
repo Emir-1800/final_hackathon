@@ -72,104 +72,108 @@ const Products = () => {
   };
 
   return (
-    <div className="main_container">
+    <div className="cards">
       <div className="filter">
         <Filter type={type} setType={setType} />
       </div>
-      <div className="container">
-        {products
-          ? products.slice(productVisited, sliceTwoIndex).map((item) => (
-              <Card
-                key={item.id}
-                className="card"
-                sx={{
-                  borderRadius: "20px",
-                  width: "300px",
-                  height: "430px ",
-                  marginBottom: "50px",
-                }}
-              >
-                <CardMedia
-                  sx={{
-                    width: "200px",
-                    height: "220px",
-                    alignItems: "center",
-                    margin: "auto",
-                  }}
-                  component="img"
-                  alt={item.title}
-                  height="100"
-                  image={item.img1}
-                />
-                <CardContent sx={{ marginLeft: "20px" }}>
-                  <Typography gutterBottom variant="h5" component="div">
-                    {item.title}
-                  </Typography>
-
-                  <Typography
-                    variant="body2"
-                    color="text.secondary"
-                    height="25px"
-                  >
-                    {item.description}
-                  </Typography>
-
-                  <Typography
+      <div className="cards__container">
+        <div className="cards__wrapper">
+          <div className="container">
+            {products
+              ? products.slice(productVisited, sliceTwoIndex).map((item) => (
+                  <Card
+                    key={item.id}
+                    className="card"
                     sx={{
-                      fontWeight: "bold",
-                      fontSize: "15px",
-                      marginTop: "20px",
+                      borderRadius: "20px",
+                      width: "300px",
+                      height: "430px ",
+                      marginBottom: "50px",
                     }}
-                    variant="body2"
-                    color="text.secondary"
                   >
-                    {item.price}
-                  </Typography>
-                </CardContent>
-                <CardActions
-                  sx={{
-                    justifyContent: "center",
-                    marginBottom: "30px",
-                  }}
-                >
-                  {/* <Button className="btn1" size="small" variant="outlined">
+                    <CardMedia
+                      sx={{
+                        width: "200px",
+                        height: "220px",
+                        alignItems: "center",
+                        margin: "auto",
+                      }}
+                      component="img"
+                      alt={item.title}
+                      height="100"
+                      image={item.img1}
+                    />
+                    <CardContent sx={{ marginLeft: "20px" }}>
+                      <Typography gutterBottom variant="h5" component="div">
+                        {item.title}
+                      </Typography>
+
+                      <Typography
+                        variant="body2"
+                        color="text.secondary"
+                        height="25px"
+                      >
+                        {item.description}
+                      </Typography>
+
+                      <Typography
+                        sx={{
+                          fontWeight: "bold",
+                          fontSize: "15px",
+                          marginTop: "20px",
+                        }}
+                        variant="body2"
+                        color="text.secondary"
+                      >
+                        {item.price}
+                      </Typography>
+                    </CardContent>
+                    <CardActions
+                      sx={{
+                        justifyContent: "center",
+                        marginBottom: "30px",
+                      }}
+                    >
+                      {/* <Button className="btn1" size="small" variant="outlined">
                     Edit
                   </Button> */}
-                  <Button
-                    sx={{
-                      marginRight: "20px",
-                    }}
-                    onClick={() => deleteProduct(item.id)}
-                    className="btn"
-                    size="small"
-                    variant="outlined"
-                  >
-                    Delete <RestoreFromTrashIcon />
-                  </Button>
-                  <NavLink to={`/details/${item.id}`}>
-                    <Button className="btn" size="small" variant="outlined">
-                      Preview
-                    </Button>
-                  </NavLink>
+                      <Button
+                        sx={{
+                          marginRight: "20px",
+                        }}
+                        onClick={() => deleteProduct(item.id)}
+                        className="btn"
+                        size="small"
+                        variant="outlined"
+                      >
+                        Delete <RestoreFromTrashIcon />
+                      </Button>
+                      <NavLink to={`/details/${item.id}`}>
+                        <Button className="btn" size="small" variant="outlined">
+                          Preview
+                        </Button>
+                      </NavLink>
 
-                  <Button onClick={(e) => addProductToCart(item)}>
-                    <AddShoppingCartIcon />
-                  </Button>
-                </CardActions>
-              </Card>
-            ))
-          : null}
-        <ReactPaginate
-          previousLabel={"Назад"}
-          nextLabel={"Вперед"}
-          pageCount={pageCount}
-          containerClassName={"paginationBttns"}
-          previousLinkClassName={"previousBttn"}
-          nextLinkClassName={"nextBttn"}
-          disabledClassName={"paginationDisabled"}
-          activeClassName={"paginationActive"}
-          onPageChange={changePage}
-        />
+                      <Button onClick={(e) => addProductToCart(item)}>
+                        <AddShoppingCartIcon />
+                      </Button>
+                    </CardActions>
+                  </Card>
+                ))
+              : null}
+            <ReactPaginate
+              previousLabel={"Назад"}
+              nextLabel={"Вперед"}
+              pageCount={pageCount}
+              containerClassName={"paginationBttns"}
+              previousLinkClassName={"previousBttn"}
+              nextLinkClassName={"nextBttn"}
+              disabledClassName={"paginationDisabled"}
+              activeClassName={"paginationActive"}
+              onPageChange={changePage}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

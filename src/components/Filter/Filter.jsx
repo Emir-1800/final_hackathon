@@ -7,7 +7,6 @@ import FormLabel from "@mui/material/FormLabel";
 
 const Filter = ({ type, setType }) => {
   return (
-
     // <div >
     <FormControl className="filter1">
       <FormLabel id="demo-radio-buttons-group-label"></FormLabel>
@@ -40,7 +39,6 @@ const Filter = ({ type, setType }) => {
       </RadioGroup>
     </FormControl>
     // </div>
-
   );
 };
 
