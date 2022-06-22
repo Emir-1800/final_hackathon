@@ -20,11 +20,11 @@ const Cart = () => {
           <table>
             <thead>
               <tr>
-                <th>Фото</th>
+                <th>Картинки</th>
                 <th>Название</th>
-                <th>Цена</th>
+                <th>Цена Тура</th>
                 <th>Количество</th>
-                <th>Сумма продукта</th>
+                <th>Сумма Тура</th>
               </tr>
             </thead>
             <tbody>
@@ -59,7 +59,7 @@ const Cart = () => {
           </table>
           <h4>Общая сумма: {cart.totalPrice}</h4>
           <NavLink to="/ordercard">
-            <button className="but">Оформить заказ</button>
+            <button className="but">Оформить Тур</button>
           </NavLink>
         </div>
       ) : (

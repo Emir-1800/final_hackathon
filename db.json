@@ -1,4 +1,34 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 12699682b6a9c7c2e2b33ea90f251ddbe21cb0c1
+{
+  "tours": [
+    {
+      "title": "1",
+      "type": "1",
+      "description": "1",
+      "price": "1",
+      "img1": "1",
+      "img2": "1",
+      "img3": "1",
+      "id": 1
+    },
+    {
+      "title": "sscsbhbhb",
+      "type": "bbhbbhbh",
+      "description": "bhbbhbhb",
+      "price": "hbhbhbh",
+      "img1": "bhbhbhbh",
+      "img2": "bhbhbhb",
+      "img3": "hbhbhbhb",
+      "id": 2
+    },
+    {
+      "title": "льльльльль",
+      "type": "льльльл",
+      "description": "ььльльль",
+      "price": "1500",
+      "img1": "https://avatars.mds.yandex.net/i?id=6e73c33e489fdf8c258f072972dca8bf-5522449-images-thumbs&n=13",
+      "img2": "https://avatars.mds.yandex.net/i?id=6e73c33e489fdf8c258f072972dca8bf-5522449-images-thumbs&n=13",
+      "img3": "https://avatars.mds.yandex.net/i?id=6e73c33e489fdf8c258f072972dca8bf-5522449-images-thumbs&n=13",
+      "id": 4
+    }
+  ]
+}
