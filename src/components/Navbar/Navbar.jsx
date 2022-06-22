@@ -1,11 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "../Button/Button";
 import { Link } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 import "./Navbar.css";
+
+const filterSearch = (searchText, listOfSearch) => {
+  if (!searchText) {
+    return listOfSearch;
+  }
+  return listOfSearch.filter(({ search }) => search.toLowerCase().includes());
+};
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
+  const { email } = useAuth();
+
   // const [navbar, setNavbar] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -43,19 +53,25 @@ const Navbar = () => {
             SAYAKAT
             <i class="fab fa-typo3" />
           </Link>
+          <div className="search">Search</div>
+          <div>
+            <input />
+          </div>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
-              <Link
-                to="/addatour"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Add a tour
-              </Link>
-            </li>
+            {email === "admin@gmail.com" ? (
+              <li className="nav-item">
+                <Link
+                  to="/addatour"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  Add a tour
+                </Link>
+              </li>
+            ) : null}
             <li className="nav-item">
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
@@ -99,7 +115,11 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
+          {button && (
+            <Link to="/sign-up" className="btn-mobile">
+              <Button buttonStyle="btn--outline">SIGN UP</Button>
+            </Link>
+          )}
         </div>
       </nav>
     </>
