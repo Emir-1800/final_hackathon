@@ -1,4 +1,4 @@
-export const API = "http://54.245.142.239";
+export const API = "https://rapiraproject.herokuapp.com";
 export const API2 = "https://furnitureshop18.herokuapp.com/api/v1/";
 export const ADMIN = "admin@admin.com";
 

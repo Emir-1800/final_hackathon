@@ -16,16 +16,23 @@ const AuthContextProvider = ({ children }) => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const register = async (user) => {
+  const register = async (username, email, password, password_confirm) => {
+    console.log(username, email, password, password_confirm);
     const config = {
       headers: { "Content-Type": "multipart/form-data" },
     };
     let formData = new FormData();
-    formData.append("email", user.email);
-    formData.append("password", user.password);
+    formData.append("username", username);
+    formData.append("email", email);
+    formData.append("password", password);
+    formData.append("password_confirm", password_confirm);
 
     try {
-      const res = await axios.post(`${API}account/register/`, formData, config);
+      const res = await axios.post(
+        `${API}/account/register/`,
+        formData,
+        config
+      );
     } catch (e) {
       console.log(e);
       setError("error occured");
@@ -99,9 +106,10 @@ const AuthContextProvider = ({ children }) => {
     formData.append("password", password);
 
     try {
-      let res = await axios.post(`${API}account/login/`, formData, config);
+      let res = await axios.post(`${API}/account/login/`, formData, config);
       console.log(res);
-      localStorage.setItem("token", JSON.stringify(res.data));
+      localStorage.setItem("refresh", res.data.refresh);
+      localStorage.setItem("access", res.data.access);
       localStorage.setItem("username", username);
       setUser(username);
 
@@ -109,6 +117,7 @@ const AuthContextProvider = ({ children }) => {
 
       setUserName(localStorage.getItem("username"));
     } catch (error) {
+      console.log("Don't account");
       setError("error occured");
     }
   }
