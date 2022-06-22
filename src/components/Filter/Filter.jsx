@@ -24,11 +24,7 @@ const Filter = ({ type, setType }) => {
           label="Mountains"
         />
         <FormControlLabel value="Lakes" control={<Radio />} label="Lakes" />
-        <FormControlLabel
-          value="City Tour"
-          control={<Radio />}
-          label="City Tour"
-        />
+        <FormControlLabel value="City" control={<Radio />} label="City Tour" />
         <FormControlLabel value="all" control={<Radio />} label="All Tours" />
         {/* <FormControlLabel
           value="disabled"

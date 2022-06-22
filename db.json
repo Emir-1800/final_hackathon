@@ -1,6 +1,7 @@
 {
   "tours": [
     {
+
       "title": "Ala Archa",
       "type": "Mountains",
       "description": "Duration: 4-5 hours. Location: 40 km south of Bishkek, 40-50 min. Height: 1600-4860 m. Hiking, walking to the waterfall (depending on weather conditions, may take a whole day) Season: all year round Note: it is recommended to have hiking shoes and warm clothes   Ala-Archa natural park is 40 km away from Bishkek. It is a popular place for outdoor picnics, lovers of walking and horseback riding, and also for mountaineers and skiers. There are more than 20 glaciers, two small rivers that come from their melting and 50 mountain peaks in the park. Ala-Archa features both flora, including Tien Shan firs, Semenov firs, Kolpakovsky and Kaufman tulips and rare edelweiss alpine flowers; and fauna: eagles, ibex, Marco Polo sheep and rare, but well known, snow leopards. Here you will enjoy the smell of real juniper.",
@@ -29,6 +30,7 @@
       "img2": "https://travelbar.kg/template/images/listings/479/3.jpg",
       "img3": "https://www.open.kg/uploads/posts/2018-08/1535631093_screenshot_9.png",
       "id": 3
+
     }
   ]
 }

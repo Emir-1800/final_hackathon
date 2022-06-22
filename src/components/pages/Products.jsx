@@ -26,13 +26,14 @@ const Products = () => {
   // console.log(...searchParams);
 
   const [type, setType] = useState(searchParams.get("type") || "all");
+  console.log(searchParams.get("type"));
 
   const paramsWithType = () => {
     // console.log("params With Type");
     console.log(searchParams.get("q"));
     return {
       type: type,
-      q: searchParams.get("q"),
+      q: searchParams.get("type"),
     };
   };
 
@@ -94,10 +95,11 @@ const Products = () => {
                   >
                     <CardMedia
                       sx={{
-                        width: "200px",
+                        width: "300px",
                         height: "220px",
                         alignItems: "center",
-                        margin: "auto",
+                        margin: "5 5px",
+                        padding: "5 5px",
                       }}
                       component="img"
                       alt={item.title}

@@ -20,7 +20,7 @@ const HeroSection = () => {
             Find your tour today
           </Button>
         </Link>
-        <Link to="/https://www.youtube.com/watch?v=OiVVKITz7oA">
+        <a href="https://www.youtube.com/watch?v=hitNXU4PoRU" target="_blank">
           <Button
             className="btns"
             buttonStyle="btn--primary"
@@ -29,7 +29,7 @@ const HeroSection = () => {
           >
             WATCH TRAILER <i className="far fa-play-circle" />
           </Button>
-        </Link>
+        </a>
       </div>
     </div>
   );
