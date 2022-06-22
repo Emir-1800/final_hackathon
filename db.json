@@ -2,24 +2,34 @@
   "tours": [
     {
 
-      "title": "1",
+      "title": "Ala Archa",
       "type": "Mountains",
-      "description": "1",
-      "price": "1",
-      "img1": "1",
-      "img2": "1",
-      "img3": "1",
+      "description": "Duration: 4-5 hours. Location: 40 km south of Bishkek, 40-50 min. Height: 1600-4860 m. Hiking, walking to the waterfall (depending on weather conditions, may take a whole day) Season: all year round Note: it is recommended to have hiking shoes and warm clothes   Ala-Archa natural park is 40 km away from Bishkek. It is a popular place for outdoor picnics, lovers of walking and horseback riding, and also for mountaineers and skiers. There are more than 20 glaciers, two small rivers that come from their melting and 50 mountain peaks in the park. Ala-Archa features both flora, including Tien Shan firs, Semenov firs, Kolpakovsky and Kaufman tulips and rare edelweiss alpine flowers; and fauna: eagles, ibex, Marco Polo sheep and rare, but well known, snow leopards. Here you will enjoy the smell of real juniper.",
+      "price": "100",
+      "img1": "https://triptokyrgyzstan.com/sites/default/files/media/image/c_evgeniy_mezencev.jpeg",
+      "img2": "https://sputnik.kg/img/102749/78/1027497816_0:0:5241:2948_1920x0_80_0_0_78c4077b1b9597c8d5069cd0a2439c03.jpg",
+      "img3": "https://cs5.pikabu.ru/post_img/big/2015/05/04/6/1430727808_400908703.jpeg",
       "id": 1
     },
     {
-      "title": "2",
+      "title": "Issyk-Kul",
       "type": "Lakes",
-      "description": "4",
-      "price": "44",
-      "img1": "4",
-      "img2": "44",
-      "img3": "4",
+      "description": "On this tour you will travel to one of the most popular places in Kyrgyzstan, Lake Issyk-Kul. You will visit the Burana Tower, the Ruh-Ordo Cultural Center, and the Jeti-Oguz Valley and Fairy Tale Canyon. In these short 3 days you will be able to visit the northern and southern shores of Lake Issyk-Kul.Bishkek - Chon-Kemin (135 km/3 h)1 In the morning, meet your guide/driver and leave for Chon-Kemin Valley, which is a popular tourist destination fascinating with its beautiful unspoiled nature. On the way, a visit to Burana Tower, a small outdoor museum and tombstones (stone figures). Visitors can climb to the top of the minaret and enjoy a beautiful view of the valley.   Arrival in the village of Tarsuu and accommodation in a local guest house, where you can feel the warm and cozy atmosphere. In the afternoon excursion to Kalmak-Ashuu Gorge. Arrival to the guest house. Opportunity to go on a walking tour around the village, meet locals and explore the area.  Available activities on request (extra charge): - Boorsok show (small pieces of dough fried in oil, Kyrgyz national bread); - Horseback riding.  Meals: lunch, dinner.",
+      "price": "210",
+      "img1": "https://radioiskatel.ru/wp-content/uploads/2018/12/issyk-kul.jpg",
+      "img2": "https://oir.mobi/uploads/posts/2021-06/1623130712_16-oir_mobi-p-isilkul-ozero-priroda-krasivo-foto-16.jpg",
+      "img3": "https://www.advantour.com/img/kyrgyzstan/issyk-kul/issyk-kul6.jpg",
       "id": 2
+    },
+    {
+      "title": "Golden-Arashan",
+      "type": "Mountains",
+      "description": "Altyn-Arashan (translated as \"Golden Spring\") is a mountain gorge in the eastern part of the Terskey Ala-Too mountain range, located near the city of Karakol. This gorge is one of the most popular tourist places in Kyrgyzstan, thanks to its unique nature, hot springs located right in the gorge, extensive spruce forests and stunning views. Back in the days of the Soviet Union, the territory of the gorge was recognized as a specially protected protected area due to the great natural diversity of the gorge. The canyon received its status of a nature reserve in 1963 and retains it to this day because it is one of the few places on the planet where the thick relic forest of the Tian Shan spruce has survived. The hot springs of Altyn-Arashan are also widely known. They are located at a record height of 2600 meters and have a healing effect due to the content of radon and hydrogen sulfide in the water, maintaining a high temperature all year round: 35 degrees for the radon spring and 41 degrees for the hydrogen sulfide spring. Some springs are built indoor pools, while others to this day are \"wild\", located in hollowed-out in the rocks, bathing holes or grottos. Wide flow of tourists to Altyn-Arashanu provides its location: through this gorge you can climb to the alpine lake Ala-Kul - beautiful lake Terskei-Ala-Too, overcoming the pass of the same name, the height of 3800 meters. The road there runs through the left tributary of Altyn-Arashan river, 5 km above the resort. Another reason why tourists love this place is the Aksu Wall, also called Palatka Peak, because of its unusual trapezoidal shape, which is a great rarity in the Tien Shan mountains. The view of the wall has become a kind of calling card of the gorge. For the fans of hiking will be especially interesting to walk to the bottom of the peak, where there is a small glacial lake Kashka-Suu and several waterfalls: Sharkyratma, Kuldurek, Tash-Tektir, Archaly-Tor and Takyr-Tor. Altyn-Arashan Gorge has a complex geographical relief, unlike other mountain gorges of the Northern Tien Shan. In its lower part Altyn-Arashan is a narrow canyon with a large degree of ascent, and a rough river, which in summer can flood the road. In the upper part, the gorge expands significantly and becomes a kind of high-altitude valley, with a very smooth drop in altitude. Upstream, the gorge splits, forming two arms, enveloping the Aksu wall on the right and left sides. There are a huge number of hiking trails in Altyn-Arashan. This place is used as a base camp for radial treks, as a transfer point on the way to Ala-Kul, Ak-Suu gorge or Karakol and Djety-Oguz valleys. It is also a wonderful place for rest among unspoiled nature of Tien-Shan.",
+      "price": "100",
+      "img1": "https://www.baibol.kg/img/attraction_gallery/152413956389135.jpg",
+      "img2": "https://travelbar.kg/template/images/listings/479/3.jpg",
+      "img3": "https://www.open.kg/uploads/posts/2018-08/1535631093_screenshot_9.png",
+      "id": 3
 
     }
   ]
