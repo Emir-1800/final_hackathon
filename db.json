@@ -1,74 +1,26 @@
 {
   "tours": [
     {
-      "title": "ijijioj",
-      "type": "ijojoiji",
-      "description": "ijoijioj",
-      "price": "5615615615",
-      "img1": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "img2": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "img3": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "id": 5
-    },
-    {
-      "title": "ndskvnsdnvndkvn",
-      "type": "   jh jh",
-      "description": " j hjh jh ",
-      "price": "1651561",
-      "img1": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "img2": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "img3": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "id": 6
-    },
-    {
-      "title": "31515151",
-      "type": "51561561",
-      "description": "511516165",
-      "price": "1561561561",
-      "img1": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "img2": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "img3": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "id": 7
-    },
-    {
+
       "title": "1",
-      "type": "1",
+      "type": "Mountains",
       "description": "1",
-      "price": "2",
-      "img1": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "img2": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "img3": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "id": 8
+      "price": "1",
+      "img1": "1",
+      "img2": "1",
+      "img3": "1",
+      "id": 1
     },
     {
-      "title": "165156156",
-      "type": "16515",
-      "description": "151351",
-      "price": "5151",
-      "img1": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "img2": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "img3": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "id": 9
-    },
-    {
-      "title": "4",
-      "type": "4",
+      "title": "2",
+      "type": "Lakes",
       "description": "4",
-      "price": "4",
-      "img1": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "img2": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "img3": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "id": 10
-    },
-    {
-      "title": "515151",
-      "type": "515151",
-      "description": "1515151",
-      "price": "515151",
-      "img1": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "img2": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "img3": "https://avatars.mds.yandex.net/i?id=2c54966cd38be1040cd08e52b8b0a280-5226766-images-thumbs&n=13",
-      "id": 11
+      "price": "44",
+      "img1": "4",
+      "img2": "44",
+      "img3": "4",
+      "id": 2
+
     }
   ]
 }
