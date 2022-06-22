@@ -8,35 +8,38 @@ import "./Filter.css";
 
 const Filter = ({ type, setType }) => {
   return (
-    <div className="filter1">
-      <FormControl>
-        <FormLabel id="demo-radio-buttons-group-label">Филтрация</FormLabel>
-        <RadioGroup
-          aria-labelledby="demo-radio-buttons-group-label"
-          defaultValue="female"
-          name="radio-buttons-group"
-          value={type}
-          onChange={(e) => setType(e.target.value)}
-        >
-          <FormControlLabel
-            value="Laptop"
-            control={<Radio />}
-            label="Ноутбук/планшет"
-          />
-          <FormControlLabel value="Phone" control={<Radio />} label="Телефон" />
-          <FormControlLabel
-            value="Accessories"
-            control={<Radio />}
-            label="Аксессуары"
-          />
-          <FormControlLabel
-            value="all"
-            control={<Radio />}
-            label="Все товары"
-          />
-        </RadioGroup>
-      </FormControl>
-    </div>
+    // <div >
+    <FormControl className="filter1">
+      <FormLabel id="demo-radio-buttons-group-label"></FormLabel>
+      <RadioGroup
+        row
+        aria-labelledby="demo-radio-buttons-group-label"
+        // defaultValue="female"
+        name="radio-buttons-group"
+        value={type}
+        onChange={(e) => setType(e.target.value)}
+      >
+        <FormControlLabel
+          value="Mountains"
+          control={<Radio />}
+          label="Mountains"
+        />
+        <FormControlLabel value="Lakes" control={<Radio />} label="Lakes" />
+        <FormControlLabel
+          value="City Tour"
+          control={<Radio />}
+          label="City Tour"
+        />
+        <FormControlLabel value="all" control={<Radio />} label="All Tours" />
+        {/* <FormControlLabel
+          value="disabled"
+          disabled
+          control={<Radio />}
+          label="other"
+        /> */}
+      </RadioGroup>
+    </FormControl>
+    // </div>
   );
 };
 

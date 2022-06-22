@@ -123,13 +123,13 @@ const ProductsDetails = () => {
             <Typography variant="body2" gutterBottom>
               {productDetails.description}
             </Typography>
-            <Alert
+            {/* <Alert
               icon={<TrendingDownIcon fontSize="inherit" />}
               severity="success"
               sx={{ fontWeight: 700, mt: "20px" }}
             >
               Скидка : 10 %
-            </Alert>
+            </Alert> */}
             <Box
               component="div"
               sx={{
@@ -160,7 +160,7 @@ const ProductsDetails = () => {
                 {productDetails.price} с.
               </Typography>
             </Box>
-            <Button
+            {/* <Button
               variant="contained"
               color="success"
               startIcon={<AddShoppingCartIcon />}
@@ -168,17 +168,17 @@ const ProductsDetails = () => {
               sx={{ mt: "20px", height: "50px" }}
             >
               Добавить в корзину
-            </Button>
+            </Button> */}
             <NavLink to={`/edit/${productDetails.id}`}>
               <Button>Edit</Button>
             </NavLink>
-            <Alert
+            {/* <Alert
               severity="info"
               variant="outlined"
               sx={{ fontWeight: 700, mt: "20px" }}
             >
               Телефон: +996555222222
-            </Alert>
+            </Alert> */}
           </Grid>
         </Grid>
       </Container>

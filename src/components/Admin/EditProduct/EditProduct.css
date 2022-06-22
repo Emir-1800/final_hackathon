@@ -1,0 +1,10 @@
+.edit1 {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+  height: 100%;
+  margin: 10 10px;
+  padding: 10px;
+  background: rgb(200, 255, 0);
+}
