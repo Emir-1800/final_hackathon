@@ -83,8 +83,8 @@ export default function Registration() {
       alertToastify();
     }
 
-    register({ username, email, password, password_confirm });
-    alert("ok");
+    register(username, email, password, password_confirm);
+    // alert("ok");
   }
 
   return (

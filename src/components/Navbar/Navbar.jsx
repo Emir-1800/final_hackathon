@@ -55,23 +55,23 @@ const Navbar = () => {
           </Link>
           <div className="search">Search</div>
           <div>
-            <input />
+            <input id="inpSer" />
           </div>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            {email === "admin@gmail.com" ? (
-              <li className="nav-item">
-                <Link
-                  to="/addatour"
-                  className="nav-links"
-                  onClick={closeMobileMenu}
-                >
-                  Add a tour
-                </Link>
-              </li>
-            ) : null}
+            {/* {email === "admin@gmail.com" ? ( */}
+            <li className="nav-item">
+              <Link
+                to="/addatour"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Add a tour
+              </Link>
+            </li>
+            {/* ) : null} */}
             <li className="nav-item">
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
@@ -95,7 +95,6 @@ const Navbar = () => {
                 Tours
               </Link>
             </li>
-
             <li>
               <div className="cart">
                 <Link

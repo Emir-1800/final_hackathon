@@ -30,9 +30,39 @@
   align-items: center;
 }
 
+@media screen and (max-width: 320px) {
+  #inpSer {
+    display: none;
+  }
+}
+@media screen and (max-width: 376px) {
+  #inpSer {
+    display: none;
+  }
+}
+@media screen and (max-width: 426px) {
+  #inpSer {
+    display: none;
+  }
+}
 .search {
-  color: #fff;
+  color: white;
   margin-left: 50px;
+}
+@media screen and (max-width: 320px) {
+  .search {
+    display: none;
+  }
+}
+@media screen and (max-width: 376px) {
+  .search {
+    display: none;
+  }
+}
+@media screen and (max-width: 426px) {
+  .search {
+    display: none;
+  }
 }
 
 .fa-typo3 {

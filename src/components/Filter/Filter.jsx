@@ -4,10 +4,10 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
-import "./Filter.css";
 
 const Filter = ({ type, setType }) => {
   return (
+
     // <div >
     <FormControl className="filter1">
       <FormLabel id="demo-radio-buttons-group-label"></FormLabel>
@@ -40,6 +40,7 @@ const Filter = ({ type, setType }) => {
       </RadioGroup>
     </FormControl>
     // </div>
+
   );
 };
 
