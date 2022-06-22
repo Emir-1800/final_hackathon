@@ -12,9 +12,14 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { useAuth } from "../context/AuthContext";
-import { Modal } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { authContext, useAuth } from "../context/AuthContext";
+import { NavLink, useNavigate } from "react-router-dom";
+import { Navigation } from "@mui/icons-material";
+import { pink } from "@mui/material/colors";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { userAdmin } from "../helpers/Consts";
+// import "./Registration.css";
 
 function Copyright(props) {
   return (
@@ -26,7 +31,7 @@ function Copyright(props) {
     >
       {"Copyright © "}
       <Link color="inherit" href="https://mui.com/">
-        Moody Studio
+        Your Website
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -36,57 +41,53 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export default function Register() {
-  //   const handleSubmit = (event) => {
-  //     event.preventDefault();
-  //     const data = new FormData(event.currentTarget);
-  //     console.log({
-  //       email: data.get('email'),
-  //       password: data.get('password'),
-  //     });
-  //   };
-
-  const [email, setEmail] = React.useState("");
-  const [password, setPassword] = React.useState("");
-  const { register, error, activationCode, forgotPassCode } = useAuth();
-
-  const [activeCode, setActiveCode] = React.useState("");
-
-  function activeCodeFunc(e) {
-    setActiveCode(e.target.value);
-  }
-
-  const [forgotPass, setForgotPass] = React.useState("");
-
-  function forgotPassFunc(e) {
-    setForgotPass(e.target.value);
-  }
-
-  function handleRegister(email, password) {
-    register({ email, password });
-  }
-
-  const style = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    width: 400,
-    bgcolor: "background.paper",
-    border: "2px solid #000",
-    boxShadow: 24,
-    p: 4,
+export default function Registration() {
+  const navigate = useNavigate();
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    console.log({
+      username: data.get("username"),
+      email: data.get("email"),
+      password: data.get("password"),
+      password_confirm: data.get("password_confirm"),
+    });
   };
 
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const { user } = useAuth();
 
-  const [open2, setOpen2] = React.useState(false);
-  const handleOpen2 = () => setOpen2(true);
-  const handleClose2 = () => setOpen2(false);
+  const [username, setUsername] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [password, setPassword] = React.useState("");
+  const [password_confirm, setPassword_confirm] = React.useState("");
+  const { register, error } = useAuth();
 
-  const navigate = useNavigate();
+  const alertToastify = () => {
+    toast.error("Заполните все поля!", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,
+    });
+  };
+
+  function handleRegister(username, email, password, password_confirm) {
+    if (
+      username.trim() === "" ||
+      email.trim() === "" ||
+      password.trim() === "" ||
+      password_confirm.trim() === ""
+    ) {
+      alertToastify();
+    }
+
+    register({ username, email, password, password_confirm });
+    alert("ok");
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
@@ -99,8 +100,8 @@ export default function Register() {
             alignItems: "center",
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-            <LockOutlinedIcon />
+          <Avatar sx={{ m: 1, bgcolor: pink[500] }}>
+            <LockOutlinedIcon color="string" />
           </Avatar>
           <Typography component="h1" variant="h5">
             Registration
@@ -112,6 +113,18 @@ export default function Register() {
             sx={{ mt: 1 }}
           >
             {error ? <Typography>{error}</Typography> : null}
+            <TextField
+              margin="normal"
+              required
+              fullWidth
+              id="username"
+              label="username"
+              name="username"
+              autoComplete="username"
+              autoFocus
+              onChange={(e) => setUsername(e.target.value)}
+              value={username}
+            />
             <TextField
               margin="normal"
               required
@@ -136,6 +149,19 @@ export default function Register() {
               onChange={(e) => setPassword(e.target.value)}
               value={password}
             />
+            <TextField
+              margin="normal"
+              required
+              fullWidth
+              name="password_confirm"
+              label="Password_confirm"
+              type="password"
+              id="password_confirm"
+              autoComplete="current-password_confirm"
+              onChange={(e) => setPassword_confirm(e.target.value)}
+              value={password_confirm}
+            />
+
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
@@ -146,71 +172,26 @@ export default function Register() {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
               onClick={() => {
-                handleRegister(email, password);
-                handleOpen();
+                // handleClick();
+
+                handleRegister(username, email, password, password_confirm);
+                // navigate("/done");
               }}
             >
               Register
             </Button>
-            <div>
-              <Modal
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-              >
-                <Box sx={style}>
-                  <Typography
-                    id="modal-modal-title"
-                    variant="h6"
-                    component="h2"
-                  >
-                    Enter activation code
-                  </Typography>
-                  <TextField onChange={(e) => activeCodeFunc(e)} size="small" />
-                  <Button onClick={() => activationCode(activeCode)}>
-                    Send
-                  </Button>
-                </Box>
-              </Modal>
-              <Modal
-                open={open2}
-                onClose={handleClose2}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-              >
-                <Box sx={style}>
-                  <Typography
-                    id="modal-modal-title"
-                    variant="h6"
-                    component="h2"
-                  >
-                    Enter your email
-                  </Typography>
-                  <TextField onChange={(e) => forgotPassFunc(e)} />
 
-                  <Button
-                    onClick={() => {
-                      forgotPassCode(forgotPass);
-                    }}
-                  >
-                    Send
-                  </Button>
-                </Box>
-              </Modal>
-            </div>
-            <Grid container>
-              <Grid item xs>
-                <Link href="#" variant="body2" onClick={() => handleOpen2()}>
-                  Forgot password?
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link href="/login" variant="body2">
-                  {"Don't have an account? Sign Up"}
-                </Link>
-              </Grid>
-            </Grid>
+            <ToastContainer
+              position="top-center"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+            />
           </Box>
         </Box>
         <Copyright sx={{ mt: 8, mb: 4 }} />
